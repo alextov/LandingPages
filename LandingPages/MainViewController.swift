@@ -34,13 +34,15 @@ class MainViewController: UIViewController, UICollectionViewDelegateFlowLayout {
     
     
     @IBAction func buttonTapped(sender: AnyObject) {
-//
+        let modalViewController = ModalViewController(nibName: "ModalViewController", bundle: nil)
+        self.presentViewController(modalViewController, animated: true, completion: nil)
     }
     
     
     // MARK: - Overridden methods
     
     override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+        self.collectionView.collectionViewLayout.invalidateLayout()
         let currentPage = pageControl.currentPage
         coordinator.animateAlongsideTransition({ context in
             self.collectionView.contentOffset.x = CGFloat(currentPage) * size.width

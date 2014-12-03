@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		112166071A2E187100320A35 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 112166061A2E187100320A35 /* CollectionViewCell.xib */; };
+		11354CEA1A2F57AE0075142A /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11354CE91A2F57AE0075142A /* ModalViewController.swift */; };
+		11354CEC1A2F58440075142A /* ModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11354CEB1A2F58440075142A /* ModalViewController.xib */; };
 		11D914101A2DC38D004BF3A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D9140F1A2DC38D004BF3A8 /* AppDelegate.swift */; };
 		11D914121A2DC38D004BF3A8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D914111A2DC38D004BF3A8 /* MainViewController.swift */; };
 		11D914171A2DC38D004BF3A8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11D914161A2DC38D004BF3A8 /* Images.xcassets */; };
@@ -30,6 +32,8 @@
 
 /* Begin PBXFileReference section */
 		112166061A2E187100320A35 /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		11354CE91A2F57AE0075142A /* ModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		11354CEB1A2F58440075142A /* ModalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModalViewController.xib; sourceTree = "<group>"; };
 		11D9140A1A2DC38D004BF3A8 /* LandingPages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LandingPages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11D9140E1A2DC38D004BF3A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11D9140F1A2DC38D004BF3A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +128,8 @@
 			children = (
 				11D914111A2DC38D004BF3A8 /* MainViewController.swift */,
 				11D914321A2DC3C2004BF3A8 /* MainViewController.xib */,
+				11354CE91A2F57AE0075142A /* ModalViewController.swift */,
+				11354CEB1A2F58440075142A /* ModalViewController.xib */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -226,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11D914171A2DC38D004BF3A8 /* Images.xcassets in Resources */,
+				11354CEC1A2F58440075142A /* ModalViewController.xib in Resources */,
 				112166071A2E187100320A35 /* CollectionViewCell.xib in Resources */,
 				11D914331A2DC3C2004BF3A8 /* MainViewController.xib in Resources */,
 				11D914301A2DC3A1004BF3A8 /* Default-568h@2x.png in Resources */,
@@ -247,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11D914121A2DC38D004BF3A8 /* MainViewController.swift in Sources */,
+				11354CEA1A2F57AE0075142A /* ModalViewController.swift in Sources */,
 				11D914101A2DC38D004BF3A8 /* AppDelegate.swift in Sources */,
 				11FAAA4B1A2DD13D00EAA7BD /* CollectionViewCell.swift in Sources */,
 				11FAAA501A2DE53A00EAA7BD /* MainViewControllerDataSource.swift in Sources */,
