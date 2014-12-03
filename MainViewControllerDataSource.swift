@@ -25,22 +25,7 @@ class MainViewControllerDataSource: NSObject, UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("CollectionViewCell", forIndexPath: indexPath) as CollectionViewCell
         cell.frontImageView!.image = UIImage(named: frontImages[indexPath.row])
         cell.backImageView!.image = UIImage(named: backImages[indexPath.row])
-//        cell.baseImageOrigin = cell.backImageView.frame.origin
-//        cell.backImageView!.image = UIImage(named: frontImages[indexPath.row])
         cell.backImageView!.alpha = cell.backgroundAlpha
-        
-//        cell.frontImageView.backgroundColor = .redColor()
-//        cell.backImageView.backgroundColor = .greenColor()
-//        switch indexPath.row {
-//        case 0:
-//            cell.backgroundColor = .redColor()
-//        case 1:
-//            cell.backgroundColor = .yellowColor()
-//        case 2:
-//            cell.backgroundColor = .greenColor()
-//        default:
-//            break
-//        }
         return cell
     }
     

@@ -67,7 +67,7 @@ class MainViewController: UIViewController, UICollectionViewDelegateFlowLayout {
                 let alpha: Double = cell.backgroundAlpha.native as Double * min(1.0 - 2.0 * (abs(xOffset.native) as Double) / (offsetSpeed.native as Double), 1.0)
                 cell.backImageView.alpha = CGFloat(alpha)
             }
-        }// PresentModelViewController
+        }
     }
     
     func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
