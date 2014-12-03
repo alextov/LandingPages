@@ -27,7 +27,7 @@ class MainViewControllerDataSource: NSObject, UICollectionViewDataSource {
         cell.backImageView!.image = UIImage(named: backImages[indexPath.row])
 //        cell.baseImageOrigin = cell.backImageView.frame.origin
 //        cell.backImageView!.image = UIImage(named: frontImages[indexPath.row])
-        cell.backImageView!.alpha = 0.35
+        cell.backImageView!.alpha = cell.backgroundAlpha
         
 //        cell.frontImageView.backgroundColor = .redColor()
 //        cell.backImageView.backgroundColor = .greenColor()

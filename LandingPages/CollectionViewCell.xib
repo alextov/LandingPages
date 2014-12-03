@@ -46,7 +46,7 @@
                 <outlet property="backImageView" destination="LXL-pZ-UpY" id="1Xk-a7-fof"/>
                 <outlet property="frontImageView" destination="mBs-ZH-yrY" id="9xZ-zD-AMg"/>
             </connections>
-            <point key="canvasLocation" x="372" y="476"/>
+            <point key="canvasLocation" x="379" y="265"/>
         </collectionViewCell>
     </objects>
 </document>
