@@ -9,11 +9,14 @@
 import UIKit
 
 class MainViewController: UIViewController, UICollectionViewDelegateFlowLayout {
-
+    
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var pageControl: UIPageControl!
     
     var dataSource = MainViewControllerDataSource()
+
+    
+    // MARK: - Overridden methods
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,28 +57,15 @@ class MainViewController: UIViewController, UICollectionViewDelegateFlowLayout {
     }
     
     func scrollViewDidScroll(scrollView: UIScrollView) {
-        let offsetSpeed: CGFloat = 100//50.0
+        let offsetSpeed = self.view.frame.width
         if let visibleCells = self.collectionView.visibleCells() as? [CollectionViewCell] {
             for cell in visibleCells {
                 let xOffset = ((collectionView.contentOffset.x - cell.frame.origin.x) / cell.frame.width) * offsetSpeed
-                cell.setBackOffset(CGPointMake(abs(xOffset), 0.0))
-//                println("offset: \(xOffset)\t\(cell.backImageView.frame.origin))")
-//                println(cell.baseImageOrigin.x)
-//                println(cell.backImageView.bounds)
-
-//                println(cell.frame)
-//                cell.setBackOffset(CGPointMake(xOffset, 0))
-                
-//                let xOffset = ((collectionView.contentOffset.x - cell.frame.origin.x) / cell.frontImageView.frame.width) * offsetSpeed
-//                cell.setImageOffset(CGPointMake(xOffset + cell.baseImageOrigin.x, cell.frontImageView.frame.origin.y))
-//                if abs(xOffset) > 0 {
-//                    cell.frontImageView.alpha = cell.baseImageOrigin.x / 2 / abs(xOffset)
-//                } else {
-//                    cell.frontImageView.alpha = 1
-//                }
+                cell.setBackOffset(CGPointMake(-xOffset, 0.0))
+                let alpha: Double = cell.backgroundAlpha.native as Double * min(1.0 - 2.0 * (abs(xOffset.native) as Double) / (offsetSpeed.native as Double), 1.0)
+                cell.backImageView.alpha = CGFloat(alpha)
             }
-            println()
-        }
+        }// PresentModelViewController
     }
     
     func scrollViewDidEndDecelerating(scrollView: UIScrollView) {

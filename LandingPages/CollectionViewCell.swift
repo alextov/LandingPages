@@ -11,7 +11,7 @@ import UIKit
 
 class CollectionViewCell: UICollectionViewCell {
     
-    var baseImageOrigin: CGPoint = CGPoint()
+    let backgroundAlpha: CGFloat = 0.35
     @IBOutlet weak var frontImageView: UIImageView!
     @IBOutlet weak var backImageView: UIImageView!
     
@@ -29,10 +29,6 @@ class CollectionViewCell: UICollectionViewCell {
     
     
     // MARK: - Private methods
-    
-    func setImageOffset(offset: CGPoint) {
-        frontImageView.frame = CGRectOffset(self.frontImageView.bounds, offset.x, offset.y)
-    }
     
     func setBackOffset(offset: CGPoint) {
         backImageView.frame = CGRectOffset(backImageView.bounds, offset.x, offset.y)
