@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "LandingPages.MainViewController.scrollViewDidScroll (LandingPages.MainViewController)(ObjectiveC.UIScrollView) -&gt; ():MainViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "cell.frame">
+            </PersistentString>
+            <PersistentString
+               value = "collectionView.contentOffset.x">
+            </PersistentString>
+            <PersistentString
+               value = "cell.imageView.frame.height">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

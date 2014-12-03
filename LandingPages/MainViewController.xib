@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="LandingPages" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="OuB-ia-PnG" id="HA3-sA-J2z"/>
+                <outlet property="pageControl" destination="djW-NU-21T" id="5iK-S1-kqa"/>
+                <outlet property="view" destination="iN0-l3-epB" id="kAL-bF-6BM"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="djW-NU-21T">
+                    <rect key="frame" x="281" y="505" width="39" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="I0I-OT-AbB"/>
+                    </constraints>
+                </pageControl>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KCz-cI-Efa">
+                    <rect key="frame" x="222" y="550" width="150" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="pm2-fv-KkT"/>
+                    </constraints>
+                    <state key="normal" title="Magic">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonTapped:" destination="-1" eventType="touchUpInside" id="LlB-A7-c8e"/>
+                    </connections>
+                </button>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="OuB-ia-PnG">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="497"/>
+                    <color key="backgroundColor" red="0.3448550876" green="0.52288583190000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="glM-CG-1Qm">
+                        <size key="itemSize" width="600" height="600"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="0.34485508758644712" green="0.52288583189115712" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="OuB-ia-PnG" secondAttribute="trailing" id="1jD-oP-n6P"/>
+                <constraint firstAttribute="centerX" secondItem="KCz-cI-Efa" secondAttribute="centerX" constant="3" id="4Sl-t7-vhl"/>
+                <constraint firstAttribute="bottom" secondItem="djW-NU-21T" secondAttribute="bottom" constant="20" symbolic="YES" id="DW4-OF-klV"/>
+                <constraint firstAttribute="centerX" secondItem="djW-NU-21T" secondAttribute="centerX" id="L5v-7e-k3Y"/>
+                <constraint firstAttribute="bottom" secondItem="KCz-cI-Efa" secondAttribute="bottom" constant="20" symbolic="YES" id="W8Z-Tp-cb9"/>
+                <constraint firstItem="OuB-ia-PnG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="cFa-x7-Clu"/>
+                <constraint firstItem="OuB-ia-PnG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="csh-2q-YXx"/>
+                <constraint firstAttribute="bottom" secondItem="OuB-ia-PnG" secondAttribute="bottom" id="dRd-Ux-fKN"/>
+                <constraint firstItem="KCz-cI-Efa" firstAttribute="top" secondItem="djW-NU-21T" secondAttribute="bottom" constant="8" symbolic="YES" id="gAS-QK-aBL"/>
+                <constraint firstItem="djW-NU-21T" firstAttribute="top" secondItem="OuB-ia-PnG" secondAttribute="bottom" constant="8" symbolic="YES" id="ptb-6B-WGB"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="dRd-Ux-fKN"/>
+                    <exclude reference="DW4-OF-klV"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="310" y="255"/>
+        </view>
+    </objects>
+</document>
